@@ -1,0 +1,5 @@
+.pyc
+__pycache__
+.project
+.pydevproject
+interview_project.egg-info
