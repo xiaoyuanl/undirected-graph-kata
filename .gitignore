@@ -3,4 +3,6 @@
 __pycache__
 .project
 .pydevproject
-interview_project.egg-info
+build
+dist
+undirected_graph.egg-info
