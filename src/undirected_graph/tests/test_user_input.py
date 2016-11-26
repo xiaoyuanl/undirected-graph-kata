@@ -31,3 +31,9 @@ class TestUserInput(unittest.TestCase):
             self.user_input.OddNumberOfEdges,
             self.user_input._tokenize, input
         )
+
+    def test_insertVertexesAddsCorrectQtyOfVertexes(self):
+        input = '1 2 3 4'
+        tokens = self.user_input._tokenize(input)
+        vertex_qty = self.user_input._insert_multiple_vertexes(tokens)
+        self.assertEqual(vertex_qty, 4)

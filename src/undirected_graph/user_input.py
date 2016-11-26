@@ -10,12 +10,18 @@ class UserInput():
 
         return tokens
 
+    def _insert_multiple_vertexes(self, tokens):
+        for i, j in zip(tokens[0::2], tokens[1::2]):
+            self.graph.insert_vertex(i, j)
+
+        return len(self.graph.adjacencies)
+
     def interpret(self, string):
+        qty_disconnected = 0
         try:
             tokens = self._tokenize(string)
 
-            for a, b in tokens:
-                self.insert_vertex(a, b)
+            self._insert_multiple_vertexes(tokens)
 
             qty_disconnected = self.graph.disconnected_sub_graphs()
         except self.graph.VertexDoesNotExist as e:
