@@ -1,9 +1,9 @@
 .DS_Store
-.swp
-.pyc
+*.swp
+*.pyc
 __pycache__
-.project
-.pydevproject
+*.project
+*.pydevproject
 build
 dist
 undirected_graph.egg-info
