@@ -9,4 +9,9 @@ setup(name='undirected_graph',
       author_email='grahamg@gmail.com',
       packages=find_packages(exclude=[]),
       test_suite='undirected_graph.tests',
+      entry_points = {
+          'console_scripts': [
+              'undirected_graph=undirected_graph:main',
+          ]
+      }
 )

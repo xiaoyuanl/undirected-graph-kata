@@ -1,4 +1,6 @@
 .DS_Store
+*.cache
+*.eggs
 *.swp
 *.pyc
 __pycache__
